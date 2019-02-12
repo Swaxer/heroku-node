@@ -41,7 +41,7 @@ jobs:
         command: yarn migrate
 
       # run database migration
-     - run: yarn migrate
+      - run: yarn migrate
 
 
 workflows:
