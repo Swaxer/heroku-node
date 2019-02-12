@@ -41,7 +41,7 @@ jobs:
           command: npm run migrate
 
       # run database migration
-      - run: npm migrate
+      - run: npm run migrate
 
 
 workflows:
