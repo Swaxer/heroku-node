@@ -2,6 +2,7 @@ const Koa = require('koa')
 const app = new Koa()
 const bodyParser = require('koa-bodyparser')
 const apiRoute = require('./apiRoute')
+require('dotenv').config()
 
 app.use(bodyParser());
 
