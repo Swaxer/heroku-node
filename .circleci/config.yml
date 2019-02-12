@@ -36,7 +36,13 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: npm test
+      - run:
+        name: migrate
+        command: yarn migrate
+
+      # run database migration
+     - run: npm migrate
+
 
 workflows:
   heroku_deploy:
