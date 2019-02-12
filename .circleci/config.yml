@@ -37,11 +37,11 @@ jobs:
 
       # run tests!
       - run:
-        name: migrate
-        command: npm run migrate
+          name: migrate
+          command: npm run migrate
 
       # run database migration
-      - run: npm run migrate
+      - run: npm migrate
 
 
 workflows:
