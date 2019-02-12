@@ -38,10 +38,10 @@ jobs:
       # run tests!
       - run:
         name: migrate
-        command: yarn migrate
+        command: npm migrate
 
       # run database migration
-      - run: yarn migrate
+      - run: npm migrate
 
 
 workflows:
